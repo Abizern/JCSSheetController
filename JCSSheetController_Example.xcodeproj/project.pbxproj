@@ -13,7 +13,9 @@
 		EE21B416130FD5F100F5B766 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE21B414130FD5F100F5B766 /* Credits.rtf */; };
 		EE21B419130FD5F100F5B766 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21B418130FD5F100F5B766 /* AppDelegate.m */; };
 		EE21B41C130FD5F100F5B766 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE21B41A130FD5F100F5B766 /* MainMenu.xib */; };
+		EE3E4AA11310177900749DEC /* SheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3E4AA01310177900749DEC /* SheetController.m */; };
 		EE86722E130FD8460016C1BF /* JCSSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE86722D130FD8460016C1BF /* JCSSheetController.m */; };
+		EEDC3A0C13102DA1001C46D2 /* ExampleSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +32,11 @@
 		EE21B417130FD5F100F5B766 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE21B418130FD5F100F5B766 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EE21B41B130FD5F100F5B766 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EE3E4A9F1310177900749DEC /* SheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetController.h; sourceTree = "<group>"; };
+		EE3E4AA01310177900749DEC /* SheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetController.m; sourceTree = "<group>"; };
 		EE86722C130FD8460016C1BF /* JCSSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSSheetController.h; sourceTree = SOURCE_ROOT; };
 		EE86722D130FD8460016C1BF /* JCSSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSSheetController.m; sourceTree = SOURCE_ROOT; };
+		EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleSheet.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,8 @@
 				EE86722B130FD8200016C1BF /* JCSSheetController */,
 				EE21B417130FD5F100F5B766 /* AppDelegate.h */,
 				EE21B418130FD5F100F5B766 /* AppDelegate.m */,
+				EE3E4A9F1310177900749DEC /* SheetController.h */,
+				EE3E4AA01310177900749DEC /* SheetController.m */,
 				EE86722A130FD8050016C1BF /* Resources */,
 				EE21B40C130FD5F100F5B766 /* Supporting Files */,
 			);
@@ -110,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				EE21B41A130FD5F100F5B766 /* MainMenu.xib */,
+				EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 				EE21B410130FD5F100F5B766 /* InfoPlist.strings in Resources */,
 				EE21B416130FD5F100F5B766 /* Credits.rtf in Resources */,
 				EE21B41C130FD5F100F5B766 /* MainMenu.xib in Resources */,
+				EEDC3A0C13102DA1001C46D2 /* ExampleSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +198,7 @@
 				EE21B413130FD5F100F5B766 /* main.m in Sources */,
 				EE21B419130FD5F100F5B766 /* AppDelegate.m in Sources */,
 				EE86722E130FD8460016C1BF /* JCSSheetController.m in Sources */,
+				EE3E4AA11310177900749DEC /* SheetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

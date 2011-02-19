@@ -7,12 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class SheetController;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
 @private
     
 }
 
+@property (nonatomic, retain) SheetController *sheetController;
 @property (nonatomic, assign) IBOutlet NSWindow *window;
 @property (nonatomic, assign) IBOutlet NSTextField *label;
 @property (nonatomic, assign) IBOutlet NSButton *button;

@@ -5,7 +5,7 @@
 //  Based on the SDSheetController by Steven Degutis
 // 
 //  Requires Garbage Collection to be turned on.
-//  
+// 
 
 #import <Cocoa/Cocoa.h>
 

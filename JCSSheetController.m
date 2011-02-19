@@ -18,11 +18,9 @@
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler {
     self.handler = aHandler;
     
-    NSWindow *sheetWindow = [self window];
-    
     [self sheetWillDisplay];
     
-    [NSApp beginSheet:sheetWindow modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
+    [NSApp beginSheet:self.window modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
 }
 
 - (void)endSheetWithReturnCode:(NSInteger)result {
