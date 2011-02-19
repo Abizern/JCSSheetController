@@ -10,9 +10,15 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
 @private
-    NSWindow *window;
+    
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, assign) IBOutlet NSWindow *window;
+@property (nonatomic, assign) IBOutlet NSTextField *label;
+@property (nonatomic, assign) IBOutlet NSButton *button;
+@property (nonatomic, copy) NSString *displayString;
+
+
+- (IBAction)showSheet:(id)sender;
 
 @end
