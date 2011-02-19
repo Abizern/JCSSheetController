@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JCSSheetController_Example' target in the 'JCSSheetController_Example' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
