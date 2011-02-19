@@ -5,7 +5,9 @@
 //  Based on the SDSheetController by Steven Degutis
 // 
 //  Requires Garbage Collection to be turned on.
-// 
+//
+//  A basic window controller subclass that wraps a sheet callback in a block.
+//
 
 #import <Cocoa/Cocoa.h>
 
