@@ -1,0 +1,50 @@
+h1. JCSSheetController
+
+A Cocoa controller class for Sheets that replaces the completion callback method with an inline block.
+
+Based on "SDSheetController":https://github.com/sdegutis/SDSheetController by Steven Degutis under the new BSD license.
+
+h2. Branch structure for submodules
+
+There are two branches to this repository, *master* and *production*, these make it easier to use the same repository for developing as well as for sharing the code as a Git submodule. 
+
+h3. The master branch
+
+The master branch contains the class files as well as the Xcode project for developing/testing/demonstrating the code. This is the branch to use to for further development, as well as to see examples of how to use the specific code. 
+
+h3. The production branch
+
+The production branch should be used if you want to add these extensions as a Git submodule in other projects and will only contain the class files themselves without the Xcode project or example classes. This is preferable as it will keep your directories clean of any code which is unnecessary to your working project, of course you can switch branches in the submodule to access the given samples. *Do not perform any development on this branch*.
+
+Changes made to the master branch will be merged across to production, so it will always remain current with respect to master.
+
+To add the production branch rather than master, simply use the -b flag as shown below.
+
+bc. git submodule add -b production git://github.com/Abizern/JCSSheetController
+
+To keep up to date with the latest changes `cd` into the directory that contains this submodule and pull the newest changes as usual
+
+bc. git pull origin
+
+h3. Artefacts
+
+Sometimes, there may be artefacts left over when switching from master to production. These are files that are ignored by Git and are easily cleaned up by running
+
+bc. git clean -dxf
+
+h2. License
+
+Copyright (C) 2011 Abizer Nasir. All rights reserved.
+ 
+Based on code Copyright (C) 2009 by Steven Degutis under the the same licence.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ 
+* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ 
+* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ 
+* Neither the name of the author nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+ 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
