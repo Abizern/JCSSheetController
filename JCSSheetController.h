@@ -2,10 +2,9 @@
 //  JCSSheetController.h
 //  
 //  Created by Abizer Nasir on 19/02/11.
-//  Based on the SDSheetController by Steven Degutis
+//  Based on SDSheetController by Steven Degutis https://github.com/sdegutis/SDSheetController
 // 
 //  Requires Garbage Collection to be turned on.
-//
 //  A basic window controller subclass that wraps a sheet callback in a block.
 //
 

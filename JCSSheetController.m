@@ -2,7 +2,7 @@
 //  JCSSheetController.m
 //
 //  Created by Abizer Nasir on 19/02/11.
-//  Based on the SDSheetController by Steven Degutis
+//  Based on SDSheetController by Steven Degutis https://github.com/sdegutis/SDSheetController
 //
 
 #import "JCSSheetController.h"
