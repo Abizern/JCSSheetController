@@ -10,7 +10,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-typedef void (^JCSCompletionHandler)(NSInteger result);
+typedef void (^JCSCompletionHandler)(NSUInteger result);
 
 @interface JCSSheetController : NSWindowController {
 @private
@@ -21,7 +21,7 @@ typedef void (^JCSCompletionHandler)(NSInteger result);
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler;
 
 // Convenience methods for subclasses to use
-- (void)endSheetWithReturnCode:(NSInteger)result;
+- (void)endSheetWithReturnCode:(NSUInteger)result;
 - (void)sheetWillDisplay; // Default does nothing
 
 @end

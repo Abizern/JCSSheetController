@@ -29,7 +29,7 @@ static NSString * const kCancelString = @"Cancel button";
 
 - (void)showSheet:(id)sender {
     NSLog(@"Button clicked");
-    [sheetController beginSheetModalForWindow:self.window completionHandler:^(NSInteger returnCode) {
+    [sheetController beginSheetModalForWindow:self.window completionHandler:^(NSUInteger returnCode) {
         if (returnCode == kSheetReturnedOk) {
             self.displayString = kOkString;
         } else if (returnCode == kSheetReturnedCancel) {

@@ -8,7 +8,7 @@
 #import "JCSSheetController.h"
 
 @interface JCSSheetController ()
-- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
+- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSUInteger)returnCode contextInfo:(void *)contextInfo;
 @end
 
 @implementation JCSSheetController
@@ -23,7 +23,7 @@
     [NSApp beginSheet:self.window modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
 }
 
-- (void)endSheetWithReturnCode:(NSInteger)result {
+- (void)endSheetWithReturnCode:(NSUInteger)result {
     [NSApp endSheet:[self window] returnCode:result];
 }
 
@@ -35,7 +35,7 @@
 // Mark: -
 // Mark: Class Extension methods
 
-- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
+- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSUInteger)returnCode contextInfo:(void *)contextInfo {
     [sheet orderOut:self];
     
     if (self.handler) {
