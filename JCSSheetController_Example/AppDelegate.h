@@ -9,17 +9,13 @@
 #import <Cocoa/Cocoa.h>
 @class SheetController;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
-@private
-    
-}
+@interface AppDelegate : NSObject <NSApplicationDelegate> 
 
-@property (nonatomic, retain) SheetController *sheetController;
-@property (nonatomic, assign) IBOutlet NSWindow *window;
-@property (nonatomic, assign) IBOutlet NSTextField *label;
-@property (nonatomic, assign) IBOutlet NSButton *button;
+@property (nonatomic, strong) SheetController *sheetController;
+@property (nonatomic, unsafe_unretained) IBOutlet NSWindow *window;
+@property (nonatomic, weak) IBOutlet NSTextField *label;
+@property (nonatomic, weak) IBOutlet NSButton *button;
 @property (nonatomic, copy) NSString *displayString;
-
 
 - (IBAction)showSheet:(id)sender;
 

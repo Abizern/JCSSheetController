@@ -10,16 +10,15 @@
 
 
 @implementation SheetController
-@synthesize okButton;
-@synthesize cancelButton;
-@synthesize textField;
+@synthesize editString;
 
 - (id)init {
-    if (!(self == [super initWithWindowNibName:@"ExampleSheet"])) {
+    if (!(self = [super initWithWindowNibName:@"ExampleSheet"])) {
         return nil; // Bail!
     }
     return self;
 }
+
 - (void)windowDidLoad {
     [super windowDidLoad];
     
@@ -41,6 +40,7 @@
 // Mark: Superclass overrides
 
 - (void)sheetWillDisplay {
+    [super sheetWillDisplay];
     NSLog(@"ExampleSheet will display");
 }
 

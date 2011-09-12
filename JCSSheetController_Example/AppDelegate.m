@@ -6,7 +6,7 @@
 //  Copyright 2011 Jungle Candy Software. All rights reserved.
 //
 
-static NSString * const kInitialString = @"App started";
+static NSString * const kInitialString = @"Initial text";
 
 #import "AppDelegate.h"
 #import "SheetController.h"
@@ -26,11 +26,11 @@ static NSString * const kInitialString = @"App started";
 
 - (void)showSheet:(id)sender {
     NSLog(@"Button clicked");
-    self.sheetController.textField.stringValue = self.displayString;
     
+    self.sheetController.editString = self.displayString;
     [sheetController beginSheetModalForWindow:self.window completionHandler:^(NSUInteger returnCode) {
         if (returnCode == kSheetReturnedOk) {
-            self.displayString = sheetController.textField.stringValue;
+            self.displayString = sheetController.editString;
         } else if (returnCode == kSheetReturnedCancel) {
             NSLog(@"text change cancelled");
         } else {

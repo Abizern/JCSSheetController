@@ -12,11 +12,9 @@
 
 typedef void (^JCSCompletionHandler)(NSUInteger result);
 
-@interface JCSSheetController : NSWindowController {
-@private
-    JCSCompletionHandler handler;
-}
-@property (nonatomic, copy) JCSCompletionHandler handler;
+@interface JCSSheetController : NSWindowController 
+
+
 
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler;
 
