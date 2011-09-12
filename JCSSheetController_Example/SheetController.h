@@ -18,9 +18,11 @@ enum {
 @interface SheetController : JCSSheetController {
 @private
     
+    NSTextField *textField;
 }
 @property (nonatomic, assign) IBOutlet NSButton *okButton;
 @property (nonatomic, assign) IBOutlet NSButton *cancelButton;
+@property (nonatomic, assign) IBOutlet NSTextField *textField;
 
 - (IBAction)okClicked:(id)sender;
 - (IBAction)cancelClicked:(id)sender;

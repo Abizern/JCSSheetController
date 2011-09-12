@@ -12,6 +12,7 @@
 @implementation SheetController
 @synthesize okButton;
 @synthesize cancelButton;
+@synthesize textField;
 
 - (id)init {
     if (!(self == [super initWithWindowNibName:@"ExampleSheet"])) {

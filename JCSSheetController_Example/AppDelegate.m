@@ -7,8 +7,6 @@
 //
 
 static NSString * const kInitialString = @"App started";
-static NSString * const kOkString = @"Ok button";
-static NSString * const kCancelString = @"Cancel button";
 
 #import "AppDelegate.h"
 #import "SheetController.h"
@@ -21,19 +19,20 @@ static NSString * const kCancelString = @"Cancel button";
 @synthesize button;
 @synthesize displayString;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.displayString = kInitialString;
     self.sheetController = [[SheetController alloc] init];
 }
 
 - (void)showSheet:(id)sender {
     NSLog(@"Button clicked");
+    self.sheetController.textField.stringValue = self.displayString;
+    
     [sheetController beginSheetModalForWindow:self.window completionHandler:^(NSUInteger returnCode) {
         if (returnCode == kSheetReturnedOk) {
-            self.displayString = kOkString;
+            self.displayString = sheetController.textField.stringValue;
         } else if (returnCode == kSheetReturnedCancel) {
-            self.displayString = kCancelString;
+            NSLog(@"text change cancelled");
         } else {
             self.displayString = @"Oops!";
         }
