@@ -4,13 +4,19 @@ A Cocoa controller class for Sheets that replaces the completion callback method
 
 Based on "SDSheetController":https://github.com/sdegutis/SDSheetController by Steven Degutis under the new BSD license.
 
+h2. Requirements
+
+v2.0 and above require Mac OS X 10.7 (Lion) or above and compiled with Automatic Reference Counting, although it can be turned back into GC code with a few changes.
+
 h2. Branch structure for submodules
 
 There are two branches to this repository, *master* and *production*, these make it easier to use the same repository for developing as well as for sharing the code as a Git submodule. 
 
 h3. The master branch
 
-The master branch contains the class files as well as the Xcode project for developing/testing/demonstrating the code. This is the branch to use to for further development, as well as to see examples of how to use the specific code. 
+The master branch contains the class files as well as the Xcode project for developing/testing/demonstrating the code. This is the branch to use to for further development, as well as to see examples of how to use the specific code.
+
+The example project in this case shows a simple view with a text field and a change button that pulls down a sheet where the text can be changed, or the edit cancelled.
 
 h3. The production branch
 
