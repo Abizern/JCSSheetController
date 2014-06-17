@@ -1,3 +1,8 @@
+h1. DEPRECATED
+
+This functionality is now standard as of OS X 10.9. I'm leaving this here for historical purposes, but you're better off not using it.
+
+
 h1. JCSSheetController
 
 A Cocoa controller class for Sheets that replaces the completion callback method with an inline block.
